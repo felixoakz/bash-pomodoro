@@ -30,14 +30,11 @@ for ((i=1; i<=duration*60; i++)); do
     # Calculate the percentage of the duration that has passed
     percentage=$((i*100/(duration*60)))
     
-    # Print the status bar
-    printf "\r[%-$((duration*60/100*percentage))s] %d%%" "ELAPSED" $percentage
-
-    # print a pipe to each %
+    # Print the percentage
+    printf "\r %d%%" $percentage
     for ((j=1; j<=percentage; j++)); do
         printf "|"
     done
-    
     # Sleep for one second
     sleep 1
 done
