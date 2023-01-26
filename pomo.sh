@@ -24,7 +24,8 @@ fi
 
 # Start the timer
 echo "POMODORO TIMER started for $duration minutes ($(date) GMT)"
-
+# terminal width to variable
+width=$(tput cols)
 # Use a loop to update the status bar every second
 for ((i=1; i<=duration*60; i++)); do
     # Calculate the percentage of the duration that has passed
@@ -32,7 +33,7 @@ for ((i=1; i<=duration*60; i++)); do
     
     # Print the percentage
     printf "\r %d%%" $percentage
-    for ((j=1; j<=percentage; j++)); do
+    for ((j=1; j<=percentage && j<= width; j+=3)); do
         printf "|"
     done
     # Sleep for one second
