@@ -10,7 +10,7 @@ A simple command-line Pomodoro timer written in bash.
 1. Make the script executable by running **chmod +x pomodoro.sh**
 2. Execute the script by running **./pomodoro.sh 'argument'** where argument is an integer representing the duration of the Pomodoro in minutes.
 3. The script will start a timer and display a progress bar with percentage and pipes.
-4. Once the timer is finished, the script will display a notification and play an alert sound.
+4. Once the timer is finished, the script will display a system notification and play an alert sound.
 
 ## **Example**
 
@@ -29,7 +29,7 @@ This will start a 25-minute Pomodoro timer.
 
 ## **Authors**
 
-- @felioakz
+- @felixoakz
 - Google
 - ChatGPT (OpenAI)
 
