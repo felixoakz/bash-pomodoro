@@ -31,6 +31,7 @@ This will start a 25-minute Pomodoro timer.
 
 - @felixoakz
 - Google
+- Stackverflow
 - ChatGPT (OpenAI)
 
 If anyone wants to contribute, feel free to do so!
