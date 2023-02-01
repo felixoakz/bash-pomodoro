@@ -34,7 +34,8 @@ This will start a 25-minute Pomodoro timer.
 - Stackverflow
 - ChatGPT (OpenAI)
 
-If anyone wants to contribute, feel free to do so!
+## **Contributions**
+Feel free to contribute to this project by submitting a pull request or opening an issue. All contributions, no matter how small, are welcome!
 
 ## **License**
 
