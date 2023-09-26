@@ -34,7 +34,7 @@ fi
 stty -echo
 
 # Start the timer
-echo "POMODORO TIMER started for $duration minutes ($(date) GMT)"
+echo "POMODORO TIMER started for $duration minutes ($(date +'%r'))"
 # terminal width to variable
 width=$(tput cols)
 # Use a loop to update the status bar every second
