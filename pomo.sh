@@ -7,6 +7,15 @@
 # to execute: $ ./pomodoro.sh [argument] (argument: an interger representing minutes)
 
 # Check if a duration argument was provided
+echo -e "\n"
+echo "██████╗  ██████╗ ███╗   ███╗ ██████╗ 
+██╔══██╗██╔═══██╗████╗ ████║██╔═══██╗
+██████╔╝██║   ██║██╔████╔██║██║   ██║
+██╔═══╝ ██║   ██║██║╚██╔╝██║██║   ██║
+██║     ╚██████╔╝██║ ╚═╝ ██║╚██████╔╝
+╚═╝      ╚═════╝ ╚═╝     ╚═╝ ╚═════╝ 
+                                     "
+echo -e "\n"
 if [ -z "$1" ]; then
   echo "Error: Please provide the duration of the Pomodoro in minutes as an argument."
   exit 1
@@ -21,6 +30,8 @@ else
         exit 1
     fi
 fi
+
+stty -echo
 
 # Start the timer
 echo "POMODORO TIMER started for $duration minutes ($(date) GMT)"
@@ -43,4 +54,4 @@ done
 notify-send "Time's up! POMODORO TIMER Completed!"
 
 # Play system alert sound
-paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
+paplay mp3x.mp3
