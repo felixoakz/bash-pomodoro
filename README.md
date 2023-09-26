@@ -27,6 +27,10 @@ This will start a 25-minute Pomodoro timer.
 - This script uses the command notify-send to display notifications, which may not be present on all systems.
 - This script uses the command paplay to play sound alerts, which may not be present on all systems.
 
+## TODO
+- Add OS check provision. I saw that somewhere the day before yesterday in someone's repo.
+- Add Unicode Emoji if terminal supports
+
 ## **Authors**
 
 - @felixoakz
