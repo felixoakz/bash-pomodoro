@@ -7,7 +7,7 @@
 # to execute: $ ./pomodoro.sh [argument] (argument: an interger representing minutes)
 
 # Check if a duration argument was provided
-reset
+clear -x
 echo -e "\n"
 echo "██████╗  ██████╗ ███╗   ███╗ ██████╗ 
 ██╔══██╗██╔═══██╗████╗ ████║██╔═══██╗
