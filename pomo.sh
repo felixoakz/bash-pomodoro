@@ -7,6 +7,7 @@
 # to execute: $ ./pomodoro.sh [argument] (argument: an interger representing minutes)
 
 # Check if a duration argument was provided
+reset
 echo -e "\n"
 echo "██████╗  ██████╗ ███╗   ███╗ ██████╗ 
 ██╔══██╗██╔═══██╗████╗ ████║██╔═══██╗
@@ -55,3 +56,5 @@ notify-send "Time's up! POMODORO TIMER Completed!"
 
 # Play system alert sound
 paplay mp3x.mp3
+
+reset
