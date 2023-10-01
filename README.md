@@ -4,6 +4,7 @@ A simple command-line Pomodoro timer written in bash.
 
 - Yes, we have smartwatches, cell phones, all of them with full fledged timer functions, but using the terminal is faster if you are already working and let's face it, it's a lot cooler too! :)
 
+[![asciicast](https://asciinema.org/a/gDvmCzLlyblUua17gOyxn3Jvt.svg)](https://asciinema.org/a/gDvmCzLlyblUua17gOyxn3Jvt)
 
 ## **Usage**
 
@@ -28,9 +29,10 @@ This will start a 25-minute Pomodoro timer.
 - This script uses the command paplay to play sound alerts, which may not be present on all systems.
 
 ## TODO
-- Add OS check provision. I saw that somewhere the day before yesterday in someone's repo.
-- Add Unicode Emoji if terminal supports
-- Add the option to choose between different sounds to be reproduced at the timer completion.
+- Add OS check provision. I saw that somewhere the day before yesterday in someone's repo,
+- Add Unicode Emoji if terminal supports,
+- Add the option to choose between different sounds to be reproduced at the timer completion,
+- Create an alias that takes a number argument to run the pomo timer from any directory
 
 ## **Authors**
 
