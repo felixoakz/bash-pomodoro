@@ -1,4 +1,4 @@
-# **CLI Pomodoro Timer ⏰**
+# **CLI Pomo Timer ⏰**
 
 A simple command-line Pomodoro timer written in bash.
 
