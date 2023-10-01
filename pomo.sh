@@ -34,7 +34,7 @@ fi
 stty -echo
 
 # Start the timer
-echo "POMODORO TIMER started for $duration minutes ($(date +'%r'))"
+echo "POMODORO TIMER started for $duration minutes ( Local time: $(date +'%r'))"
 
 # terminal width to variable
 width=$(tput cols)
@@ -56,7 +56,10 @@ done
 # Notify the user that the Pomodoro is finished
 notify-send "Time's up! POMODORO TIMER Completed!"
 
-# Play system alert sound
+# timer termination alert sound
 paplay mp3x.mp3
+
+# paplay default system alert sound
+# paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
 
 reset

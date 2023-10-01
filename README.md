@@ -2,7 +2,7 @@
 
 A simple command-line Pomodoro timer written in bash.
 
-- Yes, we have a watch, cell phone, all with timer functions, but using the terminal is faster if you are already working and let's face it, it's cooler too! :)
+- Yes, we have smartwatches, cell phones, all of them with full fledged timer functions, but using the terminal is faster if you are already working and let's face it, it's a lot cooler too! :)
 
 
 ## **Usage**
@@ -10,7 +10,7 @@ A simple command-line Pomodoro timer written in bash.
 1. Make the script executable by running **chmod +x pomodoro.sh**
 2. Execute the script by running **./pomodoro.sh 'argument'** where argument is an integer representing the duration of the Pomodoro in minutes.
 3. The script will start a timer and display a progress bar with percentage and pipes.
-4. Once the timer is finished, the script will display a system notification and play an alert sound.
+4. Once the timer is finished, the script will display a system notification and play the mp3 music.
 
 ## **Example**
 
@@ -30,13 +30,12 @@ This will start a 25-minute Pomodoro timer.
 ## TODO
 - Add OS check provision. I saw that somewhere the day before yesterday in someone's repo.
 - Add Unicode Emoji if terminal supports
+- Add the option to choose between different sounds to be reproduced at the timer completion.
 
 ## **Authors**
 
 - @felixoakz
-- Google
-- Stackverflow
-- ChatGPT (OpenAI)
+- @PseudoClone
 
 ## **Contributions**
 Feel free to contribute to this project by submitting a pull request or opening an issue. All contributions, no matter how small, are welcome!
