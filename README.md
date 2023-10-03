@@ -29,10 +29,11 @@ This will start a 25-minute Pomodoro timer.
 - This script uses the command paplay to play sound alerts, which may not be present on all systems.
 
 ## TODO
-- Add OS check provision. I saw that somewhere the day before yesterday in someone's repo,
-- Add Unicode Emoji if terminal supports,
-- Add the option to choose between different sounds to be reproduced at the timer completion,
-- Create an alias that takes a number argument to run the pomo timer from any directory
+- [x] Support for BSD
+- [] Support for Mac
+- [] Add Unicode Emoji if terminal supports
+- [] Add the option to choose between different sounds to be reproduced at the timer completion
+- [] Create an alias that takes a number argument to run the pomo timer from any directory
 
 ## **Authors**
 
