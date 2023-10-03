@@ -61,7 +61,9 @@ else
 	# Todo: Support for MAC Users
 	
 	sendmsg "Pomo" "Time's up! POMODORO TIMER Completed!"
-	sndio -d
+	if [[ $(psgrep -x sndio) == 1 ]]; then
+		sndio -d
+	fi
 	while [[ $(sndio play mp3x.mp3) ]]; do
 		sleep	
 	done
