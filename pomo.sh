@@ -57,8 +57,10 @@ if [[ "$(uname -s)" == "Linux" ]]; then
 	notify-send "Time's up! POMODORO TIMER Completed!"
 	paplay mp3x.mp3
 else
-	# Assuming that the system is BSD
+	# Assuming that the system is BSD and libnotify exists
 	# Todo: Support for MAC Users
+	
+	sendmsg "Pomo" "Time's up! POMODORO TIMER Completed!"
 	sndio -d
 	while [[ $(sndio play mp3x.mp3) ]]; do
 		sleep	
