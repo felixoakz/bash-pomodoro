@@ -30,10 +30,10 @@ This will start a 25-minute Pomodoro timer.
 
 ## TODO
 - [x] Support for BSD
-- [] Support for Mac
-- [] Add Unicode Emoji if terminal supports
-- [] Add the option to choose between different sounds to be reproduced at the timer completion
-- [] Create an alias that takes a number argument to run the pomo timer from any directory
+- [ ] Support for Mac
+- [ ] Add Unicode Emoji if terminal supports
+- [ ] Add the option to choose between different sounds to be reproduced at the timer completion
+- [ ] Create an alias that takes a number argument to run the pomo timer from any directory
 
 ## **Authors**
 
