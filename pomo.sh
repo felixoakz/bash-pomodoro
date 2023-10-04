@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 # made by @felioakz + google + chatGPT :)
 
 # to execute: $ ./pomodoro.sh [argument] (argument: an interger representing minutes)
@@ -53,11 +52,22 @@ for ((i=1; i<=duration*60; i++)); do
 	# Sleep for one second
 	sleep 1
 done
-# Notify the user that the Pomodoro is finished
-notify-send "Time's up! POMODORO TIMER Completed!"
+if [[ "$(uname -s)" == "Linux" ]]; then
 
-# timer termination alert sound
-paplay mp3x.mp3
+	notify-send "Time's up! POMODORO TIMER Completed!"
+	paplay mp3x.mp3
+else
+	# Assuming that the system is BSD and libnotify exists
+	# Todo: Support for MAC Users
+	
+	sendmsg "Pomo" "Time's up! POMODORO TIMER Completed!"
+	if [[ $(psgrep -x sndio) == 1 ]]; then
+		sndio -d
+	fi
+	while [[ $(sndio play mp3x.mp3) ]]; do
+		sleep	
+	done
+fi
 
 # paplay default system alert sound
 # paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
